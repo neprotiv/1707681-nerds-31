@@ -1,12 +1,200 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Нёрдс</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Дизайн-студия «Нёрдс»</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="/img/favicon/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/img/favicon/apple-touch-icon.png">
+    <link rel="manifest" href="manifest.webmanifest">
+    <script type="text/javascript">
+    $(document).ready(function() {
+      $(".pushup").click(function() {
+        $(".client-letter").show();
+      });
+      $(".cross").click(function() {
+        $(".client-letter").hide();
+      });
+    });
+    </script>
   </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
+  <body class="page-body">
+    <header class="main-header">
+      <nav class="main-navigation">
+        <a class="main-logo">
+          <img src="img/nerds-logo.svg" width="159,87" height="65,02" alt="Логотипа дизайн-студии Нёрдс">
+        </a>
+        <ul class="site-navigation">
+          <li class="menu-list-item" id="st"><a href="">Студия</a></li>
+          <li class="menu-list-item"><a href="">Клиенты</a></li>
+          <li class="menu-list-item"><a href="catalog.html">Магазин</a></li>
+          <li class="menu-list-item"><a href="">Контакты</a></li>
+        </ul>
+        <div class="cart">
+          <a href="#" class="cart-button">
+            <img src="img/cart-icon.svg" class="cart-icon" alt="" width="15" height="15">
+            <span>Корзина</span>
+          </a>
+        </div>
+      </nav>
+    </header>
+    <main class="container">
 
+      <section class="one">
+        <div class="wrapper a">
+          <div class="infoo">
+            <h2>Долго, дорого, скрупулезно.</h2>
+            <p>Математически выверенный дизайн для вашего сайта или мобильного приложениия.</p>
+            <a class="more" href="">УЗНАТЬ БОЛЬШЕ</a>
+          </div>
+          <img class="upper" src="img/nerds-index-slide1 1.png" width="760" height="431" alt="Дизайн-студия «Нёрдс»">
+        </div>
+      </section>
+
+      <section class="main-services">
+          <ul>
+          <div class="wrapper a">
+            <li class="description-list-item">
+              <img src="img/illustration-web-site.jpg" width="300" height="146" alt="Разработка веб-сайтов">
+              <h3 class="title-service">ВЕБ-САЙТЫ</h3>
+              <p>Мир никогда не будет прежним после того, как увидит ваш сайт!</p>
+              <a class="order left" href="">ЗАКАЗАТЬ</a>
+            </li>
+            <li class="description-list-item">
+              <img src="img/illustration-app.jpg" width="300" height="146" alt="Разработка приложений">
+              <h3 class="title-service">ПРИЛОЖЕНИЯ</h3>
+              <p>Покорите топ-10 приложений в AppStore и Google Play</p>
+              <a class="order center" href="">ЗАКАЗАТЬ</a>
+            </li>
+            <li class="description-list-item">
+              <img src="img/illustration-presentation.jpg" width="300" height="146" alt="Разработка презентаций">
+              <h3 class="title-service">ПРЕЗЕНТАЦИИ</h3>
+              <p>Вы даже не подозревате, насколько вы изумительны!</p>
+              <a class="order right" href="">ЗАКАЗАТЬ</a>
+            </li>
+            </div>
+          </ul>
+      </section>
+
+
+    <div class="wrapper a" id="stroke">
+      <section class="main-description">
+        <h2 class="title-main-description">Мы — маленькая, но гордая дизайн-студия из Краснодара.</h2>
+        <p id="math">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+        <div>
+          <p class="case">Выполняем заказы на разработку:</p>
+          <ul class="description-list">
+            <li class="description-list-item"><div class="bullet"></div>Веб-сайтов любой сложности</li>
+            <li class="description-list-item"><div class="bullet"></div>Мобильных приложений для iOs и Android</li>
+            <li class="description-list-item"><div class="bullet"></div>Слайдшоу и видео для корпоративных презентаций</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="features">
+        <img src="img/nerds-illustration 1.png" width="360" height="208" alt="Дизайн-студия «Нёрдс»">
+        <div>
+          <p class="love">с 2004 года Любим точность во всем:</p>
+          <ul class="features_ul">
+            <li class="features-list-item">
+              <div class="counter">
+                <h4>146</h4>
+                <p id="percent">%</p>
+              </div>
+              <p>Уровень самоотдачи</p>
+            </li>
+            <li class="features-list-item">
+              <div class="counter">
+                <h4>100</h4>
+                <p id="percent">%</p>
+              </div>
+              <p>Соблюдение сроков</p>
+            </li>
+            <li class="features-list-item">
+              <div class="counter">
+                <h4>50</h4>
+                <p id="percent">%</p>
+              </div>
+              <p>Минимальная предоплата</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    </main>
+
+    <footer class="main-footer">
+        <ul class="logo-partners">
+          <div class="wrapper b">
+            <li class="description-list-item"><img src="img/logo_htmlacademy.png" alt="HTML Academy"></li>
+            <div class="line"></div>
+            <li class="description-list-item"><img src="img/logo_borodinskiy.png" alt="Барбершоп Бородинский"></li>
+            <div class="line"></div>
+            <li class="description-list-item"><img src="img/logo_pink.png" alt="Pink"></li>
+            <div class="line"></div>
+            <li class="description-list-item"><img src="img/logo_mishka.png" alt="Mishka"></li>
+          </div>
+        </ul>
+
+
+      <div class="footer-contacts">
+        <div class="address">
+          <p class="name">NЁRDS DESIGN STUDIO</p>
+          <p class="info">191186, Санкт-Петербург,<br>
+             ул. Б. Конюшенная, д. 19/8<br>
+             <br>
+             <a class="footer-phone" href="tel:+78122757575">+7 (812) 275-75-75</a>
+          </p>
+          <button type="submit" class="pushup">напишите нам</button>
+        </div>
+        <div class="marker"></div>
+      </div>
+
+      <div class="wrapper a" id="footer_wrap">
+        <ul class="footer-social">
+          <li class="description-list-item">
+            <a class="social-button" href=""><div class="round vk"><img src="img/vk.svg" alt="vk" width="26.01" height="15"></div></a>
+          </li>
+            <li class="description-list-item">
+              <a class="social-button" href=""><div class="round fb"><img src="img/fb.svg" alt="fb" width="12" height="22"></div></a>
+            </li>
+            <li class="description-list-item">
+              <a class="social-button" href=""><div class="round inst"><img src="img/inst.svg" alt="inst" width="21" height="21"></div></a>
+            </li>
+        </ul>
+        <div class="lets">
+          <h4>Давайте дружить, это выгодно!</h4>
+          <p class="friends">Скидка 10% для друзей из социальных сетей.</p>
+        </div>
+      </div>
+    </footer>
+
+    <div class="client-letter">
+      <div class="writeus">
+        <h2>Напишите нам</h2>
+        <div class="cross"><a href="#"></a></div>
+      </div>
+      <form action="https://echo.htmlacademy.ru/courses" method="post">
+        <div class="inp">
+          <label for="name-letter">Ваше имя:</label>
+          <input type="text" name="name" id="name-letter" value="Имя Фамилия">
+        </div>
+        <div class="inp">
+          <label for="email-letter">Ваш email:</label>
+          <input type="email" name="email" id="email-letter" value="email@example.com">
+        </div>
+        <p>
+          <label for="letter-content">Текст письма:</label>
+        </p>
+        <p>
+          <textarea name="letter" id="letter-content" rows="4" cols="62">В свободной форме</textarea>
+        </p>
+        <button type="submit">ОТПРАВИТЬ</button>
+      </form>
+    </div>
   </body>
 </html>
